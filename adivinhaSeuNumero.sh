@@ -8,6 +8,17 @@
 #                                                               #
 #################################################################
 
+# FUNCTION PAR OU IMPAR:
+PARIMPAR () {
+	declare -i NUMERO
+	read NUMERO
+	if [[ $NUMERO =~ ^[0-9]*[02468]$ ]]; then
+	    return 0
+	else
+	    return 1
+	fi
+}
+
 echo -e "Você aceita brincar com o bash? (S/N)" ; read ACEITE
 
 case $ACEITE in
@@ -15,31 +26,29 @@ case $ACEITE in
 		clear
 		echo "Legal,Vamos continuar..."
 		echo ""
-		echo -e "Pense em um número par, entre 0 e 200"
+		echo -e "Pense em um número par, entre 0 e 200 [Enter]"
 		read -n5 key
 		echo ""
 		echo -e "Agora que pensou, guarde seu número digitando aqui: " ; read NUMERO
 		echo ""
-		VERIFICA=$1
-	if [ '($VERIFICA%2)' -eq '0' ];then
-		echo -e "Multiplique o número escolhido por 2"
-		read -n5 key
-	elif [ '($VERIFICA%2)' -ne '0' ];then
-		echo "Você não digitou um número par, tente novamente."
-	fi
 
-		
-#		echo -e "Multiplique o número escolhido por 2"
-#		read -n5 key
-		echo ""
-		echo -e "Agora, pegue o resultado e divida por 2"
-		read -n5 key
-		echo ""
-		echo -e "Então subtraia o resultado pelo número que pensou"
-		read -n5 key
-		echo ""
-		RESULTADO=$(($NUMERO*2+10/2-$NUMERO*2))
-		echo -e "O número que você pensou foi: $RESULTADO"
+		#VERIFICAR SE O NUMERO DIGITADO E PAR OU IMPAR
+		if [ PARIMPAR ];then
+			echo -e "Multiplique o número escolhido por 2 [Enter]"
+			read -n5 key
+			echo ""
+			echo -e "Agora, pegue o resultado e divida por 2 [Enter]"
+			read -n5 key
+			echo ""
+			echo -e "Então subtraia o resultado pelo número que pensou [Enter]"
+			read -n5 key
+			echo ""
+			RESULTADO=$(($NUMERO*2+10/2-$NUMERO*2))
+			echo -e "O número que você pensou foi: $RESULTADO"
+		else
+			echo "Você não digitou um número par, tente novamente."
+			exit 0
+		fi
 		;;
 	N)
 		echo ""
@@ -47,6 +56,6 @@ case $ACEITE in
 		;;
 	*)
 		echo ""
-		echo " Opção inválida, digite 'S' para Sim ou 'N' para Não"	
-		;;	
-	esac	
+		echo " Opção inválida, digite 'S' para Sim ou 'N' para Não"
+		;;
+	esac
