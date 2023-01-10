@@ -2,10 +2,10 @@
 
 #################################################################
 #                                                               #
-# 	Bash adivinha o numero que você pensou/digitou          #
+# 	Bash adivinha o numero que você pensou/digitou              #
 #                                                               #
-#  	Brincando e estudando :)                                #
-#    Caio H Novelletto  01/2023                                     #
+#  	Brincando e estudando :)                                    #
+#    Caio H Novelletto  01/2023                                 #
 #################################################################
 
 clear
