@@ -9,7 +9,6 @@
 #    Caio H Novelletto  01/2023                                 #
 #################################################################
 
-
 clear
 echo ""
 echo -e "\e[1;36m Oi $LOGNAME, você aceita brincar com o bash? \e[1;33m(S/N)" ; read ACEITE
