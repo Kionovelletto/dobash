@@ -24,7 +24,7 @@ case $ACEITE in
 		echo -e "Agora que pensou, guarde seu número digitando aqui: " $(printf '\360\237\222\276\n') ; read NUMERO
 		echo ""
 
-		#VERIFICAR SE O NUMERO DIGITADO E PAR OU IMPAR
+		#VERIFICAR SE O NUMERO DIGITADO É PAR
 		if [[ $NUMERO =~ ^[0-9]*[02468]$ ]]; then
 			echo -e "Multiplique o número escolhido por 2 [Enter]"
 			read -n5 key
