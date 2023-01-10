@@ -25,7 +25,7 @@ case $ACEITE in
 		echo -e "Agora que pensou, guarde seu número digitando aqui: " $(printf '\360\237\222\276\n') ; read NUMERO
 		echo ""
 
-		#VERIFICAR SE O NUMERO DIGITADO É IMPAR
+		#VERIFICA SE O NUMERO DIGITADO É IMPAR
 		while [[ $NUMERO =~ ^[0-9]*[13579]$ ]]
 		do
 			echo -e "Você digitou um número impar, tente novamente: " $(printf '\360\237\222\276\n') ; read NUMERO
