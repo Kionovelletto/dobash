@@ -12,7 +12,7 @@ echo -e "Você aceita brincar com o bash? (S/N)" ; read ACEITE
 
 case $ACEITE in
 	S)
-		echo ""
+		clear
 		echo "Legal,Vamos continuar..."
 		echo ""
 		echo -e "Pense em um número par, entre 0 e 200"
@@ -47,6 +47,6 @@ case $ACEITE in
 		;;
 	*)
 		echo ""
-		echo " Opção inválida, digite 'S' para sim ou 'N' para Não"	
+		echo " Opção inválida, digite 'S' para Sim ou 'N' para Não"	
 		;;	
 	esac	
