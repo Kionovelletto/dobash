@@ -2,9 +2,9 @@
 
 #################################################################
 #                                                               #
-# 	Bash adivinha o numero que você pensou e digitou            #
+# 	Bash adivinha o numero que você pensou/digitou          #
 #                                                               #
-#  	Brincadeira e estudando :)                                  #
+#  	Brincadando e estudando :)                              #
 #                                                               #
 #################################################################
 
