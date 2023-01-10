@@ -8,6 +8,9 @@
 #                                                               #
 #################################################################
 
+#GERADOR DE NUMEROS PARES
+SOHPAR="$((RANDOM%20/2*2))"
+
 # FUNCTION PAR OU IMPAR:
 PARIMPAR () {
 	declare -i NUMERO
@@ -37,13 +40,16 @@ case $ACEITE in
 			echo -e "Multiplique o número escolhido por 2 [Enter]"
 			read -n5 key
 			echo ""
+			echo -e "Minha vez(bash), com o resultado da sua multiplicação some com a quantidade -> $SOHPAR [Enter]"
+			read -n5 key
+			echo ""
 			echo -e "Agora, pegue o resultado e divida por 2 [Enter]"
 			read -n5 key
 			echo ""
 			echo -e "Então subtraia o resultado pelo número que pensou [Enter]"
 			read -n5 key
 			echo ""
-			RESULTADO=$(($NUMERO*2+10/2-$NUMERO*2))
+			RESULTADO=$(($NUMERO*2+$SOHPAR/2-$NUMERO*2)) #REVISAR
 			echo -e "O número que você pensou foi: $RESULTADO"
 		else
 			echo "Você não digitou um número par, tente novamente."
