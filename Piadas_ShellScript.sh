@@ -63,8 +63,8 @@ do
     echo -e "Digite uma nova resposta:  ?" ; read RESPOSTA3
 done
     echo -e "kkkkkkk, acertou! \n "
-    echo -e "Pŕoxima. \n"
+    echo -e "Depois dessa, chega, fuiii!  \n"
     sleep 3
     clear
 
-exit 0    
+exit 0
