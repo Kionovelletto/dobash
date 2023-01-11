@@ -1,13 +1,12 @@
-
 #!/bin/bash
 
-#################################################################
-#                                                               #
-# 	Bash adivinha o numero que você pensou/digitou          #
-#                                                               #
+#############################################################
+#                                                           #
+# 	Bash adivinha o numero que você pensou/digitou V2       #
+#                                                           #
 #  	Brincando e estudando :)                                #
-#    Caio H Novelletto  01/2023                                 #
-#################################################################
+#    Caio H Novelletto  01/2023                             #
+#############################################################
 
 clear
 echo ""
